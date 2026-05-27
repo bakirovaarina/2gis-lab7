@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bakirovaarina/2gis-lab7/static/css/main.aca68f5b.css",
+    "main.js": "/bakirovaarina/2gis-lab7/static/js/main.05097ad8.js",
+    "index.html": "/bakirovaarina/2gis-lab7/index.html",
+    "main.aca68f5b.css.map": "/bakirovaarina/2gis-lab7/static/css/main.aca68f5b.css.map",
+    "main.05097ad8.js.map": "/bakirovaarina/2gis-lab7/static/js/main.05097ad8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aca68f5b.css",
+    "static/js/main.05097ad8.js"
+  ]
+}
