@@ -1,0 +1,205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2856, 58.5321] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2453, 58.5156] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3124, 58.5467] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2231, 58.5089] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3345, 58.5598] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2678, 58.4912] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1983, 58.5345] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3567, 58.5219] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1789, 58.4987] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3012, 58.5734] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2345, 58.5567] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3789, 58.5432] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1567, 58.5123] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3214, 58.4989] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2678, 58.5876] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1892, 58.5432] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3456, 58.5123] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2123, 58.5678] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3987, 58.5543] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1456, 58.5234] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3123, 58.4789] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2345, 58.5987] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3678, 58.5678] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1789, 58.4876] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2987, 58.6123] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2234, 58.5345] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3865, 58.5898] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1678, 58.5567] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3345, 58.6234] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1987, 58.4765] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2789, 58.6345] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3456, 58.4987] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1567, 58.4678] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3123, 58.6456] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2234, 58.4898] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3789, 58.6123] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1892, 58.5234] },
+      "properties": { "severity": "Легкое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.3543, 58.4789] },
+      "properties": { "severity": "Тяжелое ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1678, 58.5987] },
+      "properties": { "severity": "Среднее ДТП" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2987, 58.4567] },
+      "properties": { "severity": "Легкое ДТП" }
+    }
+  ]
+}
