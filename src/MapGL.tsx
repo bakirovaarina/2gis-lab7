@@ -12,52 +12,65 @@ export default function MapGL() {
         load().then((mapglAPI: any) => {
             const map = new mapglAPI.Map(containerRef.current, {
                 center: [31.2740, 58.5213],
-                zoom: 11,
+                zoom: 17,
                 key: 'd55a8e03-2d27-4430-8676-15d7eb8190d8',
-                style: '4cb18ed4-8753-4dad-97d7-89b551b67acb',
+                
+                style: 'f90cd86a-5702-4a76-a287-19263381ae6b',
+                
+                pitch: 70,
+                maxPitch: 85,
+                lowZoomMaxPitch: 85,
+                
+                graphicsPreset: 'immersive',
+                
+                trafficEnabled: true,
+                trafficControl: 'topRight',
+                
+                styleState: { 
+                    globeEnabled: true,
+                    immersiveRoadsOn: true
+                },
+                
+                fog: {
+                    color: '#a8d0e6',
+                    density: 0.12,
+                },
+                
+                light: {
+                    position: [135, 65, 0],   
+                    color: '#FFFFFF',
+                    intensity: 1.5,
+                },
             });
             
-            // Иммерсивные эффекты
-            if (map.setGlobeEnabled) map.setGlobeEnabled(true);
-            if (map.setImmersiveRoadsEnabled) map.setImmersiveRoadsEnabled(true);
-            if (map.setTrafficEnabled) map.setTrafficEnabled(true);
-            if (map.setFog) map.setFog({ color: '#a8d0e6', density: 0.08 });
-            if (map.setLight) map.setLight({ position: [1.5, 0.5, 1.0], color: '#ffffff', intensity: 1.2 });
-
             mapRef.current = map;
 
-            map.on('styleload', () => {
-                // Источник данных (те же точки)
-                const source = new mapglAPI.GeoJsonSource(map, {
-                    data: dtpData,
-                    attributes: { visible: true },
-                });
-
-                // 🔥 ТЕПЛОВАЯ КАРТА (heatmap) вместо точек
-                const heatmapLayer = {
-                    id: 'dtp-heatmap',
-                    filter: ['match', ['sourceAttr', 'visible'], [true], true, false],
-                    type: 'heatmap',
-                    style: {
-                        // Цвета тепловой карты (от холодного к горячему)
-                        color: [
-    'interpolate', ['linear'], ['heatmap-density'],
-    0, 'rgba(200, 200, 255, 0)',
-    0.2, 'rgba(150, 200, 255, 0.5)',
-    0.4, 'rgba(100, 200, 100, 0.6)',
-    0.6, 'rgba(255, 200, 0, 0.8)',
-    0.8, 'rgba(255, 100, 0, 0.9)',
-    1, 'rgba(255, 0, 0, 1)'
-],
-                        radius: 35,      // радиус влияния каждой точки
-                        intensity: 0.9,  // интенсивность тепловой карты
-                        opacity: 0.85,   // прозрачность
-                    },
-                };
-
-                map.addLayer(heatmapLayer);
-                console.log('✅ Тепловая карта добавлена, точек:', dtpData.features.length);
+            const source = new mapglAPI.GeoJsonSource(map, {
+                data: dtpData,
+                attributes: { visible: true },
             });
+
+            const heatmapLayer = {
+                id: 'dtp-heatmap',
+                filter: ['match', ['sourceAttr', 'visible'], [true], true, false],
+                type: 'heatmap',
+                style: {
+                    color: [
+                        'interpolate', ['linear'], ['heatmap-density'],
+                        0, 'rgba(0, 0, 255, 0)',
+                        0.2, 'rgba(0, 100, 255, 0.4)',
+                        0.4, 'rgba(100, 255, 100, 0.5)',
+                        0.6, 'rgba(255, 200, 0, 0.7)',
+                        0.8, 'rgba(255, 100, 0, 0.8)',
+                        1, 'rgba(255, 0, 0, 0.9)'
+                    ],
+                    radius: 35,
+                    intensity: 0.9,
+                    opacity: 0.7,
+                },
+            };
+
+            map.addLayer(heatmapLayer);
         }).catch(console.error);
 
         return () => {
